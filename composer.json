@@ -1,0 +1,29 @@
+{
+    "name": "lnourry75/rendu1packagistendtoend",
+    "description": "A beautiful librairy",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Lnourry75\\Rendu1packagistendtoend\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Louis Nourry",
+            "email": "louinourry@hotmail.fr"
+        }
+    ],
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^9.6||^10.2"
+    },
+    "scripts": {
+        "phpstan": "@php vendor/bin/phpstan analyse src --level=max",
+        "test": "@php vendor/bin/phpunit tests"
+    }
+}
+
