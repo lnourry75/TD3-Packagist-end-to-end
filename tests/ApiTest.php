@@ -1,15 +1,13 @@
 <?php
 
-use Lnourry75\Rendu1packagistendtoend\Api;
+use louis\OssTd2\Api;
 use PHPUnit\Framework\TestCase;
 
 class ApiTest extends TestCase
 {
-    public function testGetRandomNumber()
+    public function testGetAllCharacters(): void
     {
-        $api = new Api();
-        $this->assertIsInt($api->getRandomNumber());   
-        $this->assertGreaterThanOrEqual(0, $api->getRandomNumber());
-        $this->assertLessThanOrEqual(100, $api->getRandomNumber());
+        $api = new Api('https://fireemblem.fandom.com/fr/wiki/Liste_des_personnages_de_Fire_Emblem:_Three_Houses');
+        $this->assertIsArray($api->getAllCharacters());
     }
 }

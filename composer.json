@@ -1,11 +1,11 @@
 {
     "name": "lnourry75/rendu1packagistendtoend",
-    "description": "A beautiful librairy",
+    "description": "A beautiful library",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Lnourry75\\Rendu1packagistendtoend\\": "src/"
+            "louis\\OssTd2\\": "src/"
         }
     },
     "authors": [
@@ -15,7 +15,10 @@
         }
     ],
     "require": {
-        "php": ">=8.0"
+        "php": ">=8.0",
+        "symfony/http-client": "^6.3",
+        "symfony/css-selector": "^6.3",
+        "symfony/dom-crawler": "^6.3"
     },
     "require-dev": {
         "phpstan/phpstan": "^1.10",
@@ -26,4 +29,3 @@
         "test": "@php vendor/bin/phpunit tests"
     }
 }
-
